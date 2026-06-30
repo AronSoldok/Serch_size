@@ -44,15 +44,13 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-# test_front: в репозитории исходники; зависимости и сборка не коммитим
-test_front/node_modules/
-test_front/dist/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+!build.spec
 
 # Installer logs
 pip-log.txt
@@ -190,9 +188,5 @@ poetry.toml
 
 # LSP config files
 pyrightconfig.json
-
-#test
-test_front
-
 
 # End of https://www.toptal.com/developers/gitignore/api/python,linux
